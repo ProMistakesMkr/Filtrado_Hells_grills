@@ -1,0 +1,241 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #ed2a2a;
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-menu{
+    justify-content: space-between;
+}
+
+.navbar-menu > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.navbar-item:hover{
+    font-weight: 600;
+    color: #ed2a2a  ;
+
+    background-color: #ffffff;
+}
+
+
+.navbar-burger-icon{
+    margin: 20px;
+    vertical-align: middle;
+    display: flex;
+    z-index: 10;
+}   
+
+.navbar-burger-icon img{
+    cursor: pointer;
+}
+
+.cont-menu{
+    background-color: rgb(42,42,42);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 500px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.active{
+    transform: translate(-600px);
+}
+
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+}
+
+.navbar-search-icon{
+    margin: 20px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.navbar-shop-icon{
+    margin: 20px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.navbar-user-icon{
+    margin: 20px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.seccion_filtros > columns {
+    margin-top: 100px;
+}
+
+
+.products_discover{
+    width: 100%;
+}
+
+#productos_destacados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 35px;
+ 
+    width: 100%;
+    padding-bottom: 45px;
+    margin-inline: 16px;
+}
+
+.lista_productos_destacados{
+    padding-top: 40px;
+    width: 100%;
+}
+
+
+.card_fil {
+  justify-content: center;
+  align-items: center;
+  align-content: center;  
+
+  border-radius: 25x;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 20px;
+  stroke: rgb(236, 236, 236);
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  max-width: 100%;
+  position: relative;
+
+  margin: 20px;
+  
+}
+
+.card_figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+  }
+
+.card_figure > img {
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.card_article {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.texto_precio {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800px;
+    font-size: 20px;
+
+    color: #ed2a2a;
+}
+
+h2 {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #373737;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+
+    color: #2f2f2f;
+}
+
+.texto_guia_filtrado{
+    background-color: #ed2a2a;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.navbar-item{
+    color: #ffffff;
+}
+
+.navbar-item1 {
+    color: #1D1D1D;
+    display: block;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+.texto_filtros{
+    justify-content: flex-start;
+    margin-left: 100px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+

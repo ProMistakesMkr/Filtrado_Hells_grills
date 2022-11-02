@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hell's Grills Products</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./product_list.css">
+</head>
+
+<header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-burger-icon">
+        <img src="./src/lista.png" id="icono-menu" class="logo">
+      </div>
+
+      <div class="cont-menu active" id="menu">
+        <ul>
+          <li> Our products </li>
+          <li> About Us </li>
+          <li> Contact Us </li>
+        </ul>
+      </div>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="start">
+        <a class="navbar-item">
+          Grills
+        </a>
+
+        <a class="navbar-item">
+          Meat
+        </a>
+
+        <a class="navbar-item">
+          All our products
+        </a>
+      </div>
+
+      <div class="end">
+        <a class="navbar-item">
+          Log in
+        </a>
+
+        <a class="navbar-item">
+          Register
+        </a>
+
+        <a class="navbar-search-icon">
+          <img src="./src/buscar.png" class="logo">
+        </a>
+
+        <a class="navbar-shop-icon">
+          <img src="./src/shopping-cart.png" class="logo">
+        </a>
+
+        <a class="navbar-user-icon">
+          <img src="./src/user.png" class="logo">
+        </a>
+      </div>
+
+
+
+
+    </div>
+  </nav>
+
+</header>
+
+<body>
+
+  <section class="seccion_filtros">
+    <nav class="filtro_navegación" role="filtro">
+      <div class="columns">
+        <select class="columna_desplegable" name="destacados" id="filtro_destacados"></select>
+      </div>
+    </nav>
+
+    <section class="lista_productos_destacados">
+      <section class="texto_filtros">
+        <span class="texto_guia_filtrado">FIlter by:</span>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+
+          <select name="Fuel_type" id="filter_fuel_type" class="filter_list">
+            <option value="All">All</option>
+            <option value="Wood Pellet">Wood Pellet</option>
+            <option value="Soy Pellet">Soy Pellet</option>
+            <option value="All purpose">All Purpose</option>
+            <option value="Electric">Electric</option>
+            <option value="Mixed">Mixed</option>
+            <option value="Bark">Bark</option>
+            <option value="Coal">Coal</option>
+          </select>
+
+          <select name="MATERIAL" id="filter_material_type" class="filter_list">
+            <option value="All">All</option>
+            <option value="Stainless Steel">Stainless Steel</option>
+            <option value="Iron">Iron</option>
+            <option value="Reinforced Stainless Steel">Reinforced Stainless Steel</option>
+          </select>
+
+          <select name="PLACING" id="filter_placing" class="filter_list">
+            <option value="All">All</option>
+            <option value="Completo">Completo</option>
+            <option value="Inferior">Inferior</option>
+          </select>
+        </div>
+        </div>
+        </div>
+      </section>
+      <div id="productos_destacados"></div>
+    </section>
+
+
+</body>
+
+
+<footer>
+
+</footer>
+
+<script src="products.js"></script>
+
+</html>
